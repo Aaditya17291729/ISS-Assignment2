@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<script type="text/javascript">
+    function myFun(){
+        var randcol= "";
+        var allchar="0123456789ABCDEF";
+        for(var i=0; i<6; i++){
+           randcol += allchar[Math.floor(Math.random()*16)];
+
+
+        }
+
+         document.body.style.backgroundColor= "#"+randcol;
+
+        }
+
+ function increaseFontSizeBy100px() {
+    txt = document.getElementById('a');
+    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize + 100) + 'px';
+ }
+ function increaseFontSizeBy1px() {
+    txt = document.getElementById('b');
+    style = window.getComputedStyle(txt, null).getPropertyValue('font-size');
+    currentSize = parseFloat(style);
+    txt.style.fontSize = (currentSize + 1) + 'px';
+ }
+</script>
+
+<center>
+ <button type="button" 
+            onclick="increaseFontSizeBy1px()" name="btn1">
+            -A
+        </button>
+          
+ <button type="button" 
+            onclick="changeSizeByBtn(20)" name="btn2">
+            A
+        </button>
+
+</center>
+
+<h2>PERSONAL DETAILS</h2>
+
+<button onclick="javascript:myFun()">Change color</button>
+
+<table style="width:100%">
+  <tr>
+    <th>About Myself</th>
+    <td>My name is Aaditya. I am currently doing BTech in IIIT-H. I live in Hyderabad. My branch is CSE. </td>
+    
+  </tr>
+  <tr>
+    <th>Profile Image</th>
+    <td>
+        <img src="Aaditya.png" width="400" height="300">
+        <p>
+            <a href="../ISS-2/Aaditya.png">IMAGE in LOCAL FOLDER</a>
+        </p>
+    </td>
+    
+  </tr>
+  <tr>
+    <th>Education Background</th>
+    <td>
+        <ul>
+            <li>   Kindergarten      : S.P.R.K Vidyanikethan </li>
+            <li>Class 1 to Class 3   : Dhanush the School</li>
+            <li>Class 4 to Class 8   : K.R.C.S</li>
+            <li>Class 9 to Class 10  : Narayana High School</li>
+            <li>Class 11 to Class 12 : Narayana Junior College</li> 
+           </ul>  
+    </td>
+  </tr>
+  <tr>
+    <th>Achievements</th>
+    <td>
+        <ul>
+            <li>TS EAMCET: AIR 444</li>
+            <li>JEE Mains: AIR 978</li>
+        </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>Skills</th>
+    <td>
+        <ul>
+            <li>DANCING</li>
+            <li>SINGING</li>
+            <li>BIKE RIDING</li>
+            <li>SWIMMING</li>
+        </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>News and Updates</th>
+    <td>
+        <p>
+        WILL UPDATE WHEN I ACHIEVED SOMETHING
+        </p>
+        <p><a href="https://www.google.com/">IF YOU STILL WANT TO KNOW ABOUT ME..</a></p><p>HAHAHA USE GOOGLE</p>    
+    </td>
+  </tr>
+</table>
+
+
+
+
+</body>
+</html>
